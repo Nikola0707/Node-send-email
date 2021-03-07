@@ -14,7 +14,7 @@ const transporter = createTransport({
 const transporterSendEmail = (options) => {
   transporter.sendMail(options, function (err, info) {
     if (err) {
-      console.log(er);
+      console.log(err);
       return;
     }
     console.log("Message is send!");
